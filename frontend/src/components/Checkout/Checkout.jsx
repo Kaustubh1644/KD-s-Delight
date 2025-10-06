@@ -36,7 +36,7 @@ const Checkout = () => {
       if (paymentStatus === "success" && sessionId) {
         axios
           .post(
-            "https://dangi-s-delight-backend.onrender.com/api/orders/confirm",
+            "https://kd-s-delight-backend.onrender.com/api/orders/confirm",
             { sessionId },
             { headers: authHeaders }
           )
@@ -85,7 +85,7 @@ const Checkout = () => {
     try {
       if (formData.paymentMethod === "online") {
         const { data } = await axios.post(
-          "https://dangi-s-delight-backend.onrender.com/api/orders",
+          "https://kd-s-delight-backend.onrender.com/api/orders",
           payload,
           { headers: authHeaders }
         );
@@ -93,7 +93,7 @@ const Checkout = () => {
       } else {
         // check on delivery
         const { data } = await axios.post(
-          "https://dangi-s-delight-backend.onrender.com/api/orders",
+          "https://kd-s-delight-backend.onrender.com/api/orders",
           payload,
           { headers: authHeaders }
         );

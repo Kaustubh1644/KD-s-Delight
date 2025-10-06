@@ -30,7 +30,7 @@ const VerifyPaymentPage = () => {
     }
     // Stripe Success= True
     axios
-      .get("https://dangi-s-delight-backend.onrender.com/api/orders/confirm", {
+      .get("https://kd-s-delight-backend.onrender.com/api/orders/confirm", {
         params: { session_id },
         headers: authHeaders,
       })

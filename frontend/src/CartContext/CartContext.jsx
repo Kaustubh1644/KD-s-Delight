@@ -60,7 +60,7 @@ export const CartProvider = ({ children }) => {
   //    HYDRATE FROM SERVER API
   useEffect(() => {
     const token = localStorage.getItem("authToken");
-    axios.get("https://dangi-s-delight-backend.onrender.com/api/cart", {
+    axios.get("https://kd-s-delight-backend.onrender.com/api/cart", {
         withCredentials: true,
         headers: { Authorization: `Bearer ${token}` },
       })
@@ -74,7 +74,7 @@ export const CartProvider = ({ children }) => {
   const addToCart = useCallback(async (item, qty) => {
     const token = localStorage.getItem("authToken");
     const res = await axios.post(
-      "https://dangi-s-delight-backend.onrender.com/api/cart",
+      "https://kd-s-delight-backend.onrender.com/api/cart",
       { itemId: item._id, quantity: qty },
       {
         withCredentials: true,
@@ -86,7 +86,7 @@ export const CartProvider = ({ children }) => {
 
   const removeFromCart = useCallback(async (_id) => {
     const token = localStorage.getItem("authToken");
-    await axios.delete(`https://dangi-s-delight-backend.onrender.com/api/cart/${_id}`, {
+    await axios.delete(`https://kd-s-delight-backend.onrender.com/api/cart/${_id}`, {
       withCredentials: true,
       headers: { Authorization: `Bearer ${token}` },
     });
@@ -102,7 +102,7 @@ export const CartProvider = ({ children }) => {
 
     const token = localStorage.getItem("authToken");
     const res = await axios.put(
-      `https://dangi-s-delight-backend.onrender.com/api/cart/${_id}`,
+      `https://kd-s-delight-backend.onrender.com/api/cart/${_id}`,
       {
         quantity: qty,
       },
@@ -117,7 +117,7 @@ export const CartProvider = ({ children }) => {
   const clearCart = useCallback(async () => {
     const token = localStorage.getItem("authToken");
     await axios.post(
-      `https://dangi-s-delight-backend.onrender.com/api/cart/clear`,
+      `https://kd-s-delight-backend.onrender.com/api/cart/clear`,
       {},
       {
         withCredentials: true,

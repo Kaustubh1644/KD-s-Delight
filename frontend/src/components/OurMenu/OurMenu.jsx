@@ -21,7 +21,7 @@ const OurMenu = () => {
   useEffect(() =>{
     const fetchMenu = async () => {
       try {
-        const res = await axios.get('https://dangi-s-delight-backend.onrender.com/api/items');
+        const res = await axios.get('https://kd-s-delight-backend.onrender.com/api/items');
         const byCategory = res.data.reduce((acc, item) => {
           const cat = item.category || 'Uncategorized';
           acc[cat] = acc[cat] || [];

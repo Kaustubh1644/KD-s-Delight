@@ -4,7 +4,7 @@ import { useNavigate, Link } from "react-router-dom";
 import axios from "axios";
 
 
-const url = "https://dangi-s-delight-backend.onrender.com";
+const url = "https://kd-s-delight-backend.onrender.com/";
 const AwesomeToast = ({ message, icon }) => (
   <div
     className="animate-slide shadow-lg fixed bottom-6 right-6 flex items-center bg-gradient-to-br  from-amber-500 to-amber-600

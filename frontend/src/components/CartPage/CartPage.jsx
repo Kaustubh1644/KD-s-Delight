@@ -3,7 +3,7 @@ import { useCart } from "../../CartContext/CartContext";
 import { Link } from "react-router-dom";
 import { FaMinus, FaPlus, FaTrash, FaTimes } from "react-icons/fa";
 
-const API_URL = "https://dangi-s-delight-backend.onrender.com";
+const API_URL = "https://kd-s-delight-backend.onrender.com";
 const CartPage = () => {
   const { cartItems, removeFromCart, updateQuantity, totalAmount } = useCart();
   const [selectedImage, setSelectedImage] = useState(null);

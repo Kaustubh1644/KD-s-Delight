@@ -17,7 +17,7 @@ const SpecialOffer = () => {
   // fetch menu
   useEffect(() => {
     axios
-      .get("https://dangi-s-delight-backend.onrender.com/api/items")
+      .get("https://kd-s-delight-backend.onrender.com/api/items")
       .then((res) => setItems(res.data.items ?? res.data))
       .catch((err) => console.error(err));
   }, []);

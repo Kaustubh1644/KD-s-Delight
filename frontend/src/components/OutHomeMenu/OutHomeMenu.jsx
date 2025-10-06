@@ -21,7 +21,7 @@ const OutHomeMenu = () => {
 
   useEffect(() => {
     axios
-      .get("https://dangi-s-delight-backend.onrender.com/api/items")
+      .get("https://kd-s-delight-backend.onrender.com/api/items")
       .then((res) => {
         const grouped = res.data.reduce((acc, item) => {
           acc[item.category] = acc[item.category] || [];

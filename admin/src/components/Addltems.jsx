@@ -58,7 +58,7 @@ const Addltems = () => {
         if (key === "preview") return;
         payload.append(key, val);
       });
-      const res = await axios.post("https://dangi-s-delight-backend.onrender.com/api/items", payload, {
+      const res = await axios.post("https://kd-s-delight-backend.onrender.com/api/items", payload, {
         headers: { "Content-Type": "multipart/form-data" },
       });
       console.log("Upload success:", res.data);
