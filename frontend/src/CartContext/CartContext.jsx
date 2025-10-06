@@ -66,8 +66,9 @@ export const CartProvider = ({ children }) => {
       })
       .then((res) => dispatch({ type: "HYDRATE_CART", payload: res.data }))
       .catch((err) => {
-        if (err.response?.status !== 401) console.error(err);
-      });
+  console.error("Cart fetch failed:", err.response?.data || err.message);
+});
+
   }, []);
 
   // Dispatcher wrapped with useCallBack For Performance

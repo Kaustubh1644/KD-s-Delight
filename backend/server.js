@@ -24,8 +24,8 @@ app.use(
       const allowedOrigins = [
         "http://localhost:5173",
         "http://localhost:5174",
-        "https://kd-s-delight-frontend.onrender.com/",
-        "https://kd-s-delight-admin-1.onrender.com/"
+        "https://kd-s-delight-frontend.onrender.com",
+        "https://kd-s-delight-admin-1.onrender.com"
       ];
       
       if (!origin || allowedOrigins.includes(origin)) {
