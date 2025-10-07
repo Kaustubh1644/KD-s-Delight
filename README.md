@@ -66,3 +66,11 @@ Admin:
 cd admin
 npm start
 ---
+
+## 👥 Team Contribution  
+
+This project was developed as a group project (Group GC4).  
+
+- **Kaustubh Dhumale** → Worked on **Backend (Node.js + Express, MongoDB integration, REST APIs)** and **Deployment (Render)**.  
+- **Yash Dhonde** → Worked on **Frontend (React UI, authentication flow)**.  
+- **Vikrant Chavan** → Worked on **Admin Dashboard, order management system, and Database design & testing**. 
